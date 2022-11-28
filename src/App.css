@@ -1,0 +1,95 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+ background-image: url('/public/photos/02d.png');
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size:  cover; 
+}
+.card {
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(184, 208, 252, 0.7);
+  padding: 20px;
+  padding-top: 30px;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.card__header,
+.card__footer,
+.card__temp,
+.card__search {
+  grid-column: span 2;
+}
+.card__title {
+  text-align: center;
+  font-size: 2.5rem;
+}
+.card__subtitle {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+.card__date{
+  text-align: center;
+}
+
+.card__icon {
+  width: 80%;
+  height: 80%;
+}
+.card__temp {
+  text-align: center;
+  font-size: 2rem;
+}
+.card__info {
+  padding-top: 20px;
+}
+.card__description {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.card__list {
+  display: grid;
+  gap: 8px;
+}
+.card__footer {
+  font-size: 1rem;
+  font-weight: 200;
+}
+.card__footer {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.card__btn {
+  padding: 0.5em 1em;
+  font-size: 1.1rem;
+  border-radius: 9px;
+  cursor: pointer;
+  background-color: rgb(64, 131, 255, 1);
+  color: white;
+  box-shadow: 1 1 10px rgb(1, 42, 117, 0.4);
+  transition: transform 100ms ease;
+}
+.card__btn:hover {
+  transform: scale(1.06);
+}
+.card__btn {
+  transform: scale(1);
+  box-shadow: 1 1 5px rgb(1, 42, 117, 0.7);
+}
+.card__search-input {
+  background-color:red;
+  padding-top: 5px;
+  display: flex;
+    justify-content:space-between;
+  padding-bottom: 5px;
+   
+}
